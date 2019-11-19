@@ -246,13 +246,6 @@ func (hs *HTTPServer) setIndexViewData(c *m.ReqContext) (*dtos.IndexViewData, er
 
 	if c.OrgRole == m.ROLE_ADMIN {
 		configNodes = append(configNodes, &dtos.NavLink{
-			Text:        "Data Sources",
-			Icon:        "gicon gicon-datasources",
-			Description: "Add and configure data sources",
-			Id:          "datasources",
-			Url:         setting.AppSubUrl + "/datasources",
-		})
-		configNodes = append(configNodes, &dtos.NavLink{
 			Text:        "Users",
 			Id:          "users",
 			Description: "Manage org members",
