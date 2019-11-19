@@ -254,13 +254,6 @@ func (hs *HTTPServer) setIndexViewData(c *m.ReqContext) (*dtos.IndexViewData, er
 			Url:      setting.AppSubUrl + "/datasources",
 			Children: []*dtos.NavLink{
 				{
-					Text:        "Data Sources",
-					Icon:        "gicon gicon-datasources",
-					Description: "Add and configure data sources",
-					Id:          "datasources",
-					Url:         setting.AppSubUrl + "/datasources",
-				},
-				{
 					Text:        "Users",
 					Id:          "users",
 					Description: "Manage org members",
